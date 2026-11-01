@@ -5,5 +5,7 @@ type: software
 authors:
   - family-names: "G"
     given-names: "Bavin"
+  - family-names: "R"
+    given-names: "Sermaraja"
 version: "7.1-provisional-source-snapshot"
 license: MIT

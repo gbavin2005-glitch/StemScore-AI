@@ -1,0 +1,13 @@
+{
+  "application_release": "StemScore AI v6.16",
+  "method_version": "StemScore AI v2.0-core",
+  "training_rank_genes": 16776,
+  "model_genes": 2000,
+  "training_samples": 89,
+  "training_datasets": [
+    "GSE304806+GSE314132"
+  ],
+  "refit_support": true,
+  "model_file": "stemscore_core.joblib",
+  "refit_policy": "If model-gene coverage is below min_shared_fraction, fit a compatible Logistic Regression using stored training rank matrix/labels restricted to shared model genes."
+}

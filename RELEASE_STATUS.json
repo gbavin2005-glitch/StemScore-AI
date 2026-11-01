@@ -1,0 +1,19 @@
+{
+  "snapshot_name": "StemScore_AI_Public_Source_REVIEW_SNAPSHOT",
+  "prepared_date": "2026-11-01",
+  "proposed_version": "7.1 (provisional; version consistency unresolved)",
+  "copyright_holder": "Bavin G",
+  "proposed_license": "MIT for original source code only",
+  "excluded": [
+    "stemscore_core.joblib",
+    "microscopy_reference_library/**",
+    "original expression datasets"
+  ],
+  "training_script_found": false,
+  "model_training_metadata_reports_samples": 89,
+  "training_accessions": [
+    "GSE304806",
+    "GSE314132"
+  ],
+  "validation_status": "review snapshot; not a final validated release"
+}

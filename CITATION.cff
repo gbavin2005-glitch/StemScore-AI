@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the archived release DOI once a final release is published."
+title: "StemScore AI"
+type: software
+authors:
+  - family-names: "G"
+    given-names: "Bavin"
+version: "7.1-provisional-source-snapshot"
+license: MIT

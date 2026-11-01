@@ -1,0 +1,74 @@
+{
+  "method_version": "StemScore AI v2.0-core",
+  "training_datasets": [
+    "GSE304806+GSE314132"
+  ],
+  "n_model_genes": 2000,
+  "n_rank_universe_genes": 16776,
+  "states": [
+    "Pluripotent",
+    "Progenitor",
+    "Differentiated"
+  ],
+  "min_shared_fraction": 0.9,
+  "min_shared_genes": 5000,
+  "pluripotency_genes": [
+    "NANOG",
+    "SOX2",
+    "LIN28A",
+    "DPPA4",
+    "TDGF1",
+    "DNMT3B",
+    "ZFP42",
+    "GDF3"
+  ],
+  "proliferation_genes": [
+    "MCM2",
+    "MCM3",
+    "MCM4",
+    "MCM5",
+    "MCM6",
+    "MCM7",
+    "PCNA",
+    "MKI67",
+    "TOP2A",
+    "CCNB1",
+    "CDK1",
+    "ORC1"
+  ],
+  "pluripotency_reference": {
+    "pluripotent_mean": 0.8778151930478915,
+    "differentiated_mean": 0.4122701884150611
+  },
+  "proliferation_reference": {
+    "pluripotent_mean": 0.9202994427981015,
+    "differentiated_mean": 0.7321378670813083
+  },
+  "application_release": "StemScore AI v6.16",
+  "model_artifact": "stemscore_core.joblib",
+  "training_sample_count": 89,
+  "training_gene_intersection": 16776,
+  "processing": {
+    "GSE304806": "Cell-level counts summed by day \u00d7 assay run \u00d7 replicate; groups with fewer than 30 cells removed; CPM; log2(CPM+1).",
+    "GSE314132": "TPM; log2(TPM+1)."
+  },
+  "class_mapping": {
+    "GSE304806": {
+      "Pluripotent": "D0",
+      "Progenitor": "D2,D5",
+      "Differentiated": "D15,D30"
+    },
+    "GSE314132": {
+      "Pluripotent": "D0",
+      "Progenitor": "D2,D4",
+      "Differentiated": "D6,D8,D10,D13,D16"
+    }
+  },
+  "limitations": [
+    "The three-state labels are operational and protocol-dependent.",
+    "Independent validation is limited; do not claim universal accuracy.",
+    "The microscopy module is exploratory QC/morphology analysis, not a validated image-only state classifier.",
+    "Training-only refit behavior is implemented in the current core code; predictions on uploaded unlabeled data do not use its labels."
+  ],
+  "note": "Prediction uses the frozen model when model-gene coverage meets the configured threshold. Below the threshold, the model refits only on stored training rank data and the overlapping model features; uploaded samples are not used as labelled training data."
+}

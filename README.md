@@ -37,6 +37,11 @@ The MIT licence in this repository is intended to cover only original source cod
 ## Intended use
 
 StemScore AI is a research-support software tool. It is not a clinical diagnostic device and must not be used to make clinical decisions.
+## Contributors
+
+- Bavin G — Software development and project development.
+- Sermaraja R — Algorithm development, including classification
+  and pluripotency/proliferation scoring algorithms.
 
 ## Citation
 
